@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bem-Vindo — Curso Liberdade Financeira</title>
+  <meta name="description" content="Bem-Vindo ao Curso Liberdade Financeira — Se você tem entre 18 e 50 anos e deseja adquirir casa e carro próprios sem pagar juros abusivos, você está no lugar certo!  
+
+
+Aqui, você receberá orientações práticas que já comprovaram resultados reais para alcançar seus objetivos. Tudo para transformar em realidade o seu sonho de independência financeira — com planejamento, segurança e sem sustos. Comece hoje mesmo e dê o primeiro passo rumo à liberdade que você merece!
+
+">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f9fb;
+      --card:#ffffff;
+      --primary:#0b72ff;
+      --accent:#00c4a7;
+      --muted:#707785;
+      --glass: rgba(255,255,255,0.6);
+      font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: linear-gradient(180deg,#eef6ff 0%, var(--bg) 100%);
+      color:#0b1b2b;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding-bottom:4rem;
+    }
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:2rem;
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+      padding:1rem 0;
+    }
+    .brand{
+      display:flex;
+      gap:0.75rem;
+      align-items:center;
+      text-decoration:none;
+      color:inherit;
+    }
+    .logo{
+      width:48px;
+      height:48px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--primary),var(--accent));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:1.05rem;
+      box-shadow: 0 6px 18px rgba(11,114,255,0.18);
+    }
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:1rem;
+      font-weight:600;
+    }
+    .hero{
+      background:
+        radial-gradient(800px 200px at -10% 10%, rgba(11,114,255,0.06), transparent 10%),
+        linear-gradient(90deg, rgba(255,255,255,0.75), rgba(255,255,255,0.6));
+      border-radius:14px;
+      padding:2rem;
+      display:grid;
+      grid-template-columns: 1fr 380px;
+      gap:1.5rem;
+      align-items:center;
+      box-shadow: 0 8px 30px rgba(2,12,28,0.06);
+      margin-bottom:1.5rem;
+    }
+    .hero h1{
+      margin:0 0 0.5rem 0;
+      font-size:clamp(1.6rem,2.8vw,2.4rem);
+      line-height:1.05;
+    }
+    .hero p{margin:0 0 1rem 0;color:var(--muted)}
+    .ctas{display:flex;gap:0.75rem;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;
+      gap:0.6rem;
+      align-items:center;
+      padding:0.75rem 1rem;
+      border-radius:10px;
+      border:0;
+      cursor:pointer;
+      font-weight:600;
+      text-decoration:none;
+      color:white;
+    }
+    .btn-primary{background:linear-gradient(90deg,var(--primary),#0b8bff);}
+    .btn-outline{
+      background:transparent;
+      color:var(--primary);
+      border:2px solid rgba(11,114,255,0.12);
+      box-shadow:none;
+    }
+    .card{
+      background:var(--card);
+      padding:1rem;
+      border-radius:12px;
+      box-shadow: 0 6px 20px rgba(15,30,50,0.05);
+    }
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin-top:1rem}
+    .benefit{background:linear-gradient(180deg,#fff,#fbfdff);padding:0.75rem;border-radius:10px;font-size:0.95rem}
+    .program{margin-top:1rem;display:grid;grid-template-columns:1fr 1fr;gap:0.75rem}
+    .program li{margin-bottom:0.5rem}
+    .instructor{display:flex;gap:1rem;align-items:center}
+    .avatar{
+      width:84px;height:84px;border-radius:12px;flex-shrink:0;
+      background:linear-gradient(135deg,#fff 0%, #f0f6ff 100%);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--primary);
+      font-size:1.4rem;box-shadow: 0 8px 20px rgba(11,114,255,0.08);
+    }
+    form[aria-labelledby] label{display:block;font-size:0.9rem;margin-bottom:0.35rem;color:#243144}
+    input[type="text"], input[type="email"], textarea{
+      width:100%;padding:0.7rem;border-radius:8px;border:1px solid #e6eef8;background:transparent;
+      font-size:0.95rem;
+    }
+    .field{margin-bottom:0.8rem}
+    .small{font-size:0.85rem;color:var(--muted)}
+    footer{margin-top:2rem;text-align:center;color:var(--muted);font-size:0.9rem}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr; padding:1rem}
+      .benefits{grid-template-columns:repeat(2,1fr)}
+      .program{grid-template-columns:1fr}
+    }
+    @media (max-width:520px){
+      .benefits{grid-template-columns:1fr}
+      header{padding:0.5rem}
+      .logo{width:42px;height:42px}
+    }
+    /* success toast */
+    .toast{
+      position:fixed;right:1rem;bottom:1rem;background:#0b8bff;color:#fff;padding:0.85rem 1rem;border-radius:10px;box-shadow:0 10px 30px rgba(11,114,255,0.14);display:none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#" aria-label="Voltar para o início">
+        <div class="logo">LF</div>
+        <div>
+          <div style="font-weight:700">Liberdade Financeira</div>
+          <div style="font-size:0.85rem;color:var(--muted)"></div>
+        </div>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#programa">Programa</a>
+        <a href="#instrutor">Instrutor</a>
+        <a href="#inscricao">Inscreva-se</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" role="region" aria-labelledby="hero-title">
+        <div>
+          <h1 id="hero-title">Bem-Vindo ao Curso Liberdade Financeira</h1>
+          <p> Se você tem entre 18 e 50 anos e deseja adquirir casa e carro próprios sem pagar juros abusivos, você está no lugar certo!  
+
+
+Aqui, você receberá orientações práticas que já comprovaram resultados reais para alcançar seus objetivos. Tudo para transformar em realidade o seu sonho de independência financeira — com planejamento, segurança e sem sustos.  
+
+
+Comece hoje mesmo e dê o primeiro passo rumo à liberdade que você merece!
+          <div class="ctas">
+            <a class="btn btn-primary" href="#inscricao" role="button">Começar agora</a>
+            <a class="btn btn-outline" href="#programa" role="button" style="color:var(--primary)">Ver programa</a>
+          </div>
+
+          <div class="card" style="margin-top:1rem;">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <div>
+                <strong>O que você receberá:</strong>
+                <div class="small">1 arquivo pdf = Conquista Financeira  e  bônus   1 arquivo Memorização e Leitura Dinâmica  </div>
+              <div style="text-align:right">
+                <div style="font-weight:700;font-size:1.1rem">R$ 187,00</div>
+                
+              </div>
+            </div>
+            </div>
+        <aside class="card" aria-label="Resumo rápido">
+          <div style="font-weight:700;margin-bottom:0.5rem">O que você vai conquistar:</div>
+          <ul class="program" id="programa">
+            <li>
+
+Estratégias exclusivas que 90% das pessoas nunca aprenderão;  
+
+Controle total do seu dinheiro, evitando erros comuns;  
+
+Prática direcionada para se tornar um verdadeiro mestre das finanças pessoais.</li>
+            
+            <li> Bônus — Curso de Memorização e Leitura Dinâmica</li>
+            <li> Leia um livro em 1 hora, memorize: nomes, endereços, telefones. fisionomias, textos</li>
+             <li>Técnicas que facilitam a memória lembrando com facilidade fatos e estudos com isto auxiliando em provas de concurso público.</li>
+          </ul>
+
+          <div style="margin-top:1rem">
+            <a class="btn btn-primary" href="#inscricao">Inscreva-se</a>
+            <a href="#" style="display:inline-block;margin-left:0.5rem;margin-top:0.6rem;font-size:0.9rem;color:var(--muted)"></a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="card" style="margin-top:1rem;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+          <div>
+            <h2 id="instrutor" style="margin:0 0 0.4rem 0">Seu instrutor</h2>
+            <div class="small">Estudou na Ulbra - Tecnologo Processamentos de Dados, ministrou curso de Memorização e Leitura Dinâmica para grupos de alunos: TRJ, Mercosul e outros.  Concursado na ECT, prestou serviço militar na FAB - Esquadrão de Polícia da Aeronáutica e desenvolveu tecnicas na prática de Liberdade Financeira Pessoal.</div>
+            <div style="margin-top:0.75rem" class="instructor">
+              <div class="avatar" aria-hidden="true">LG</div>
+              <div>
+                <div style="font-weight:700">José Luis Gonçalves</div>
+                <div class="small"> Desenvolveu técnicas na Prática de Liberdade Financeira Pessoais</div>
+              </div>
+            </div>
+          </div>
+          <div style="max-width:420px" aria-hidden="true">
+            <img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='140' viewBox='0 0 420 140'%3E%3Crect width='420' height='140' rx='12' fill='%23eef6ff'/%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%230b72ff' font-family='Poppins, Arial' font-size='18'%3EÉ na prática que está o caminho da verdade%3C/text%3E%3C/svg%3E" style="width:100%;border-radius:8px;display:block">
+          </div>
+        </div>
+        <section class="card" style="margin-top:1rem" id="inscricao" aria-labelledby="inscricao-title">
+        <h2 id="inscricao-title" style="margin-top:0">Inscreva-se / Receba informações</h2>
+        <p class="small">Deixe seu nome e e-mail e enviaremos detalhes sobre a próxima turma, conteúdos e bônus.</p>
+
+        <form id="signup" aria-labelledby="inscricao-title">
+          <div class="field">
+            <label for="name">Nome completo</label>
+            <input id="name" name="name" type="text" placeholder="Seu nome" required>
+          </div>
+          <div class="field">
+            <label for="email">E‑mail</label>
+            <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required>
+          </div>
+          <div class="field">
+            <label for="mensagem">Mensagem (opcional)</label>
+            <textarea id="mensagem" name="mensagem" rows="3" placeholder="Quero saber sobre parcelamento, bolsas, dúvidas..."></textarea>
+          </div>
+
+          <div style="display:flex;gap:0.6rem;align-items:center;margin-bottom:0.65rem">
+            <input id="news" name="news" type="checkbox" checked>
+            <label for="news" class="small">Desejo receber novidades e materiais gratuitos</label>
+          </div>
+
+          <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center">
+            <button class="btn btn-primary" type="submit">Enviar inscrição</button>
+            <a class="btn btn-outline" href="mailto:contato@liberdadefinanceira.ex?subject=Informações%20Curso" style="text-decoration:none"</a>
+            <div class="small" style="margin-left:auto;color:var(--muted)">Segurança: seus dados não serão compartilhados</div>
+          </div>
+        </form>
+      </section>
+
+      <div role="status" class="toast" id="toast">Inscrição recebida — obrigado!</div>
+
+      <footer>
+        <div>© <span id="ano"></span> Liberdade Financeira — Todos os direitos reservados</div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Define year
+    document.getElementById('ano').textContent = new Date().getFullYear();
+
+    // Simple client-side handling: valida e salva em localStorage (demonstração)
+    (function(){
+      const form = document.getElementById('signup');
+      const toast = document.getElementById('toast');
+
+      function showToast(text){
+        toast.textContent = text;
+        toast.style.display = 'block';
+        setTimeout(()=> toast.style.display='none',3500);
+      }
+
+      function isEmail(email){
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.mensagem.value.trim();
+        const news = form.news.checked;
+
+        if(!name || !email){
+          showToast('Por favor, preencha nome e e-mail.');
+          return;
+        }
+        if(!isEmail(email)){
+          showToast('E-mail inválido.');
+          return;
+        }
+
+        // Simula salvamento local (em produção, envie para servidor)
+        const entry = {name, email, message, news, createdAt: new Date().toISOString()};
+        const key = 'lf_inscritos_v1';
+        const list = JSON.parse(localStorage.getItem(key) || '[]');
+        list.push(entry);
+        localStorage.setItem(key, JSON.stringify(list));
+
+        showToast('Inscrição recebida — obrigado!');
+        form.reset();
+
+        // Optionally: open mailto to confirm (commented out)
+        // window.location.href = 'mailto:' + encodeURIComponent(email) + '?subject=Confirmação%20de%20inscrição&body=Obrigado%20pela%20inscrição!';
+      });
+    })();
+  </script>
+</body>
+</html>
+        
+            
+    
